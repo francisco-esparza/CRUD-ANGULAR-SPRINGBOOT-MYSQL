@@ -1,0 +1,45 @@
+<h2 mat-dialog-title> {{data.type == 'edit'? 'Editar': 'Agregar'}} producto</h2>
+<div mat-dialog-content>
+  <form [formGroup]="form">
+    <mat-form-field appearance="outline">
+      <mat-label>Nombre del producto</mat-label>
+      <input
+        matInput
+        type="text"
+        formControlName="nombre"
+      >
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Precio del producto</mat-label>
+      <input
+        matInput
+        type="number"
+        formControlName="precio"
+      >
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions class="footer-modal">
+  <button
+    mat-flat-button
+    mat-dialog-close
+  >Cerrar</button>
+
+  <button
+    *ngIf="data.type === 'edit'"
+    mat-flat-button
+    color="primary"
+    [disabled]="!form.valid"
+    (click)="updateProduct()"
+  >Actualizar</button>
+
+  <button
+    *ngIf="data.type === 'add'"
+    mat-flat-button
+    color="primary"
+    [disabled]="!form.valid"
+    (click)="addProduct()"
+  >Guardar</button>
+
+</div>

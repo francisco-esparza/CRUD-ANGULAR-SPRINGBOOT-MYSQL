@@ -1,0 +1,28 @@
+.table-products th:first-child,
+.table-products td:first-child {
+  text-align: center;
+  width: 25%;
+}
+
+.table-products th:nth-child(2),
+.table-products td:nth-child(2){
+  text-align: center;
+  width: 25%;
+}
+
+.table-products th:nth-child(3),
+.table-products td:nth-child(3) {
+  text-align: center;
+  width: 25%;
+}
+
+.table-products th:last-child,
+.table-products td:last-child {
+  text-align: center;
+  width: 30%;
+  padding: 0;
+}
+
+.table-products td:last-child button:last-child {
+    margin-left: 1rem;
+}

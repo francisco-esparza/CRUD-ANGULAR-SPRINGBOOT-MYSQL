@@ -1,0 +1,91 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; font-size: 16px; }
+
+:root {
+  --grayLigth: #F3F4F6;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container-body {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: auto;
+  background-color: var(--grayLigth);
+}
+
+.container-body .head-Nav {
+  height: 3rem;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.container-body .body {
+  height: calc(100% - 3rem);
+  width: 100%;
+}
+
+.full-container {
+  width: calc(100% - 4rem);
+  height: calc(100% - 2rem);
+  padding: 1rem 2rem;
+}
+
+table {
+  width: 100%;
+}
+
+table thead th {
+  color: #484848;
+  font-size: 16px !important;
+  font-weight: bold
+}
+
+table tbody td {
+  color: #727171 !important;
+}
+
+.mat-form-field {
+  font-size: 18px;
+  width: 100%;
+}
+
+td, th {
+  height: 2rem;
+  width: 25%;
+}
+
+.button-table {
+  margin-right: 1vw;
+  background: #4285F4;
+  color: white;
+  font-size: 12px !important;
+  line-height: 24px !important;
+  height: auto;
+  width: auto;
+}
+
+.footer-modal {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer-modal button:last-child {
+  margin-left: 0.5rem;
+}
+
+.btn-add {
+  position: absolute !important;
+  top: auto;
+  bottom: 1rem;
+  left: auto;
+  right: 2rem
+}
